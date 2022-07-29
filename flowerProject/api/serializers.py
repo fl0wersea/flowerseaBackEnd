@@ -63,3 +63,19 @@ class MyAddressSerializer(serializers.ModelSerializer):
         model = UserInfo
         fields = ('address')
 ##############################################
+
+
+###################CART 구현##################
+class CartSerializer(serializers.ModelSerializer):      
+    class Meta:
+        model = Cart
+        fields = ('mainFlower1_ID', 'mainFlower1_amount', 
+                  'mainFlower2_ID', 'mainFlower2_amount',
+                  'mainFlower3_ID', 'mainFlower3_amount',
+                  'subFlower1_ID', 'subFlower1_amount',
+                  'subFlower2_ID', 'subFlower2_amount',
+                  'subFlower3_ID', 'subFlower3_amount',
+                  'bunchOfFlowers1_ID', 'bunchOfFlowers1_amount',
+                  'bunchOfFlowers2_ID', 'bunchOfFlowers2_amount'
+                  )
+#############################################
